@@ -22,18 +22,28 @@ if ( $stopa == "") {
 	$messages [] = 'Nie podano stopy procentowej kredytu';
 }
 
-if (empty( $messages )) { // sprawdzenie czy wprowadzone wartości są wartościami numerycznymi
+if (empty( $messages )) { // sprawdzenie czy wprowadzone wartości są dodatnimi wartościami numerycznymi
 	
 	if (! is_numeric( $kwota )) {
 		$messages [] = 'Podana wartość kwoty kredytu jest niepoprawna';
 	}
-	
+	if ($kwota < 0){
+		$messages [] = 'Kwota kredytu nie może być ujemna';
+	}
 	if (! is_numeric( $length )) {
 		$messages [] = 'Druga wartość nie jest liczbą całkowitą';
 	}	
 
+	if ($length < 0) {
+		$messages [] = 'Nie można wziąść kredytu na ujemną liczbę lat';
+	}
+
 	if (! is_numeric( $stopa )) {
 		$messages [] = 'Podana wartość stopy procentowej kredytu jest niepoprawna';
+	}
+
+	if($stopa < 0) {
+		$messages [] = 'Stopa procentowa kredytu nie może być ujemna';
 	}
 
 }
