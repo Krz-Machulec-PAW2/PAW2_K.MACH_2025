@@ -58,7 +58,7 @@ if (empty ( $messages )) { // gdy brak błędów
 	
 	$rata_mies = 0;
 
-	$rata_mies = ($kwota * ($stopa / 100)) / (12 * $length);
+	$rata_mies = ($kwota / (12 * $length)) + ($kwota * ($stopa / 100)) / (12 * $length);
 	$rata_mies = number_format((double)$rata_mies, 2, '.', '');
 	
 }
