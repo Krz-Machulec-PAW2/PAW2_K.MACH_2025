@@ -1,0 +1,54 @@
+{extends file = "../templates/main.html"}
+
+{block name=title}Standardowy{/block}
+
+{block name=content}
+
+<section>
+    <header class="main">
+        <h1>Kalkulator standardowy:</h1>
+    </header>
+
+    <form method="post" action="#">
+        <div class="row gtr-uniform">
+            <div class="col-12">
+                <input type="text" name="kwota" id="id_kwota" value="" placeholder="Wartość pierwszej liczby">
+            </div>
+
+            <div class="col-12">
+                <select name="rodzaj" id="id_rodzaj">
+                    <option value="">Rodzaj obliczeń</option>
+                    <option value="plus">+</option>
+                    <option value="minus">-</option>
+                    <option value="mnoz">*</option>
+                    <option value="dziel">:</option>
+                </select>
+            </div>
+
+            <div class="col-12">
+                <input type="text" name="length" id="id_length" value="" placeholder="Wartość drugiej liczby">
+            </div>
+
+            <div class="col-12">
+                <input type="submit" value="Oblicz"/>
+            </div>
+
+            {if isset($messages)}
+            {if count($messages) > 0} 
+                <h4>Wystąpiły błędy: </h4>
+                <ol>
+                {foreach  $messages as $msg}
+                <li>{$msg}</li>
+                {/foreach}
+                </ol>
+            {/if}
+        {/if}
+
+        {if isset($wynik)}
+	        <h4>Wynik wynosi: {$wynik}</h4>
+        {/if}
+    </form>
+</section>
+    <hr class="major" />
+
+{/block}
