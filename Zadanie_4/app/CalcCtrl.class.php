@@ -142,6 +142,10 @@ class CalcNormCtrl {
             $this->messages->addError('Nie podano drugiej wartości');
         }
 
+        if ( $this->form->rodzaj == ""){
+            $this->messages->addError('Nie wybrano operacji');
+        }
+
         
         if (! $this->messages->isError()) { // sprawdzenie czy wprowadzone wartości są dodatnimi wartościami numerycznymi
             
@@ -162,7 +166,7 @@ class CalcNormCtrl {
 
         public function oblicz(){ 
             $this->getparams();
-    
+
             if ($this->walidacja()){
 
             $this->form->kwota = doubleval($this->form->kwota);
@@ -177,8 +181,7 @@ class CalcNormCtrl {
 
             $this->messages->addInfo('Wykonano obliczenia');
 
-            }else { $this->wynik = null;
-                   $this->form->rodzaj = null; }
+            }else { $this->wynik = null;}
             $this->generateView();
     }
 

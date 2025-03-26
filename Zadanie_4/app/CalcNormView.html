@@ -43,11 +43,7 @@
                 </ol>
             {/if}
         
-        {if ! isset($rodzaj)}
-            <h4>Nie wybrano operacji</h4>
-        {/if}
 
-        {if isset($rodzaj)}
             {if ($messages->isInfo())}
 	            <h4>Informacje: </h4>
 	            <ol>
@@ -58,7 +54,6 @@
 	            {/foreach}
 	            </ol>
             {/if}
-        {/if}
 
         {if isset($wynik)}
 	        <h4>Wynik wynosi: {$wynik}</h4>
