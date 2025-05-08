@@ -43,16 +43,41 @@
 										<h2>Menu</h2>
 									</header>
 									<ul>
-                                        <li><x-nav-link href="/">Home</x-nav-link></li>
-										<li><x-nav-link href="/">Kalkulator standardowy</x-nav-link></li>
-                                        <li><x-nav-link href="/">Kalkulator kredytowy</x-nav-link></li>
-                                        <li><x-nav-link href="/">Lista osób</x-nav-link></li>
+                                        <li><x-nav-link href="/">Strona główna</x-nav-link></li>
+										<li>
+											<span class="opener">Programowanie</span>
+											<ul>
+												<li><x-nav-link href="/Programowanie/PHP">PHP</x-nav-link></li>
+												<li><x-nav-link href="/Programowanie/JAVA">Java</x-nav-link></li>
+												<li><x-nav-link href="/Programowanie/C++">C++</x-nav-link></li>
+												<li><x-nav-link href="/Programowanie">Ogólne</x-nav-link></li>
+											</ul>
+										</li>
+                                        <li>
+											<span class="opener">Gotowanie</span>
+											<ul>
+												<li><x-nav-link href="/Gotowanie/Meat">Mięsa</x-nav-link></li>
+												<li><x-nav-link href="/Gotowanie/Fish">Ryby</x-nav-link></li>
+												<li><x-nav-link href="/Gotowanie/Veg&Starch">Warzywa i produkty zbożowe</x-nav-link></li>
+												<li><x-nav-link href="/Gotowanie/Baking">Wypieki</x-nav-link></li>
+												<li><x-nav-link href="/Gotowanie/Meals">Pełne posiłki</x-nav-link></li>
+											</ul>
+										</li>
+										<li>
+											<span class="opener">Rozrywka</span>
+											<ul>
+												<li><x-nav-link href="/Rozrywka/Music">Muzyka</x-nav-link></li>
+												<li><x-nav-link href="/Rozrywka/Games">Gry</x-nav-link></li>
+												<li><x-nav-link href="/Rozrywka/Clips">Klipy</x-nav-link></li>
+												<li><x-nav-link href="/Rozrywka/Videos">Całe filmiki</x-nav-link></li>
+											</ul>
+										</li>
+                                        <li><x-nav-link href="/Lista">Lista osób</x-nav-link></li>
 
 							<!-- Footer -->
 								<footer id="footer">
-									<p class="copyright">&copy; Untitled. All rights reserved. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+									<p class="copyright">&copy; Untitled. All rights reserved. Design: <a href="https://html5up.net">HTML5 UP (with user alterations)</a>.</p>
 								</footer>
-
 						</div>
 					</div>
 

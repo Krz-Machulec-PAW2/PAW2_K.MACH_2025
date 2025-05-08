@@ -116,12 +116,12 @@ a {
   text-decoration: none; }
   a:hover {
     border-bottom-color: #263b4e;
-    color: #263b4e !important; }
+    color: #b38d8d !important; }
     a:hover strong {
       color: inherit; }
 
 strong, b {
-  color: #3d4449;
+  color: #242121;
   font-weight: 600; }
 
 em, i {
@@ -2214,7 +2214,7 @@ button,
     font-size: 0.9em;
     padding: 0.625em 0; }
     #menu ul a:hover, #menu ul span:hover {
-      color: #f56a6a; }
+      color: #b38d8d; }
     #menu ul a.opener, #menu ul span.opener {
       -moz-transition: color 0.2s ease-in-out;
       -webkit-transition: color 0.2s ease-in-out;
