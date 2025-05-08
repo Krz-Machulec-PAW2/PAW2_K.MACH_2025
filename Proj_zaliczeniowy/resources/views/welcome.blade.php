@@ -12,7 +12,7 @@
     <h3>Informacje od administratorów:</h4>
 
     <p><strong>Na chwilę obecną bez nowin</strong></p>
-    <iframe width="1200" height="720" src = "https://www.youtube.com/embed/s0E5Slqdo1M" frameboarder ="0" allowfullscreen></iframe>
+    <!-- <iframe width="1200" height="720" src = "https://www.youtube.com/embed/s0E5Slqdo1M" frameboarder ="0" allowfullscreen></iframe> -->
 
     <h3>Podstawowe informacje dotyczące strony:</h4>
 
