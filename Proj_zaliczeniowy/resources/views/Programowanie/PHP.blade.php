@@ -6,9 +6,12 @@
     
     <section>
         <header class="main">
-            <h1>Strona o programowaniu w C++:</h1>
+            <h1>Strona o programowaniu w PHP:</h1>
         </header>
+
+        <x-video-display :videos="$videos" />
         
+        <x-video-insert :cat="$cat" /> 
     </section>
     
     @endsection

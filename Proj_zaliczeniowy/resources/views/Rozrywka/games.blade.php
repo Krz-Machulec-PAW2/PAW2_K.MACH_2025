@@ -8,6 +8,10 @@
         <header class="main">
             <h1>Strona o grach:</h1>
         </header>
+
+        <x-video-display :videos="$videos" />
+
+        <x-video-insert :cat="$cat" /> 
         
     </section>
     

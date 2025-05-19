@@ -44,35 +44,8 @@
 									</header>
 									<ul>
                                         <li><x-nav-link href="/">Strona główna</x-nav-link></li>
-										<li>
-											<span class="opener">Programowanie</span>
-											<ul>
-												<li><x-nav-link href="/Programowanie/PHP">PHP</x-nav-link></li>
-												<li><x-nav-link href="/Programowanie/JAVA">Java</x-nav-link></li>
-												<li><x-nav-link href="/Programowanie/C++">C++</x-nav-link></li>
-												<li><x-nav-link href="/Programowanie">Ogólne</x-nav-link></li>
-											</ul>
-										</li>
-                                        <li>
-											<span class="opener">Gotowanie</span>
-											<ul>
-												<li><x-nav-link href="/Gotowanie/Meat">Mięsa</x-nav-link></li>
-												<li><x-nav-link href="/Gotowanie/Fish">Ryby</x-nav-link></li>
-												<li><x-nav-link href="/Gotowanie/Veg&Starch">Warzywa i produkty zbożowe</x-nav-link></li>
-												<li><x-nav-link href="/Gotowanie/Baking">Wypieki</x-nav-link></li>
-												<li><x-nav-link href="/Gotowanie/Meals">Pełne posiłki</x-nav-link></li>
-											</ul>
-										</li>
-										<li>
-											<span class="opener">Rozrywka</span>
-											<ul>
-												<li><x-nav-link href="/Rozrywka/Music">Muzyka</x-nav-link></li>
-												<li><x-nav-link href="/Rozrywka/Games">Gry</x-nav-link></li>
-												<li><x-nav-link href="/Rozrywka/Clips">Klipy</x-nav-link></li>
-												<li><x-nav-link href="/Rozrywka/Videos">Inne video</x-nav-link></li>
-											</ul>
-										</li>
-                                        <li><x-nav-link href="/Lista">Lista użytkowników</x-nav-link></li>
+										<li><x-nav-link href="/Rejestracja">Rejestracja</x-nav-link><li>
+                                        <li><x-nav-link href="/Logowanie">Logowanie</x-nav-link><li>
 
 							<!-- Footer -->
 								<footer id="footer">
